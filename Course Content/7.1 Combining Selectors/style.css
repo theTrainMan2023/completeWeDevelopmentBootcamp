@@ -1,0 +1,23 @@
+/* Write your code here: */
+h1, h2 {
+    color: blueviolet;
+}
+
+/** Direct Child below**/
+.box > p {
+    color: firebrick;
+}
+
+/** Direct descended many levels deep**/
+.box li{
+    color: blue;
+}
+
+/** Chaining Selectors**/
+li.done {
+    color: seagreen;
+}
+
+ul p.done {
+    font-size: 0.5rem;
+}
