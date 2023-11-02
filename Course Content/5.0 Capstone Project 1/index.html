@@ -4,99 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <h1>Hilton Otto</h1>
-    <hr>
-    <p><small>“The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.” Mark Caine..</small></p>
+    <!-- TITLE -->
+    <section class="title">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assets/images/profile-pic.jpg" class="d-block mx-lg-auto img-fluid" alt="picture profile" height="200" border-radius="50%" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I'm <span style="color: #2d2dad;">Hilton</span>, a full stack web developer</h1>
+                <p class="lead"><small>“The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.” Mark Caine..</small></p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">About me</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact me</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of TITLE -->
 
-    <img src="./assets/images/profile-pic.jpg" height="350" alt="Profile Picture of myself">
-    <h2>Web Developer</h2>
-    
-    <h2>Summary</h2>
-    <p>I consider myself to be a highly motivated and skilled individual, always open to implementing new and fresh views with a passion for learning. I am fully computer literate, am able to multi task and is outcomes based orientated. I have extensive knowledge as an administrator in logistics, performance management and office administration. I do possess effective communication skills. A healthy team player as well as fully capable of working as an individual due to having self-discipline and my insatiable drive to succeed. </p>
-
-    <p>My skill, expertise, knowledge and love for equality and liberty gives me the appetite and drive to make a success of every task and achieving my overall objective and that is to play my small part in the bigger picture. Dedication, drive and tenacity give me the simple edge to learn new roles and transform into an asset that will uphold the pillars and principles of this great organisation.</p>
-
-    <p>I completed a part-time course in Public Management and Governance, and have achieved an 83% final pass rate on this course. I believe I found a passion in this field of study and would like to pursue this with a National Diploma and still later a degree. Please do not let my lack of post matric education negatively impact your decision not to give me the opportunity to nurture and grow a career path that I wish to follow.</p>
-    <hr>
+    <!-- Summary -->
+    <section id="summary">
+        <div class="my-5">
+        <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-5">
+            <h2 class="text-body-emphasis">Summary</h2>
+            <p class="col-lg-8 mx-auto lead mt-2">
+                Accomplished professional skilled in achieving operational efficiency for high-performance office environments. Planning process improvement, data analysis and asset management expert. Employs stringent oversight of organizational systems and operational coordination, including procurement chains, logistics planning and information technology, IT desktop support and data management. 
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End of SUMMARY -->
 
     <!-- EDUCATION -->
-    <h2>Education</h2>
-        <p><h3>GetSmart</h3>
-            <strong>Course:</strong> Public Management and Governance Certification<br>
-            <strong>Year:</strong> September - 2015</p>
-        <ul>
-            <li>Introduction to Public Management</li>
-            <li>Political-Administration Relationships</li>
-            <li>Public Finance Management</li>
-            <li>Policy Management</li>
-            <li>Policy Monitoring and Evaluation</li>
-            <li>Organisational Behavior</li>
-            <li>Decentralised Service Management</li>
-            <li>Ethics and Governance</li>
-            <li>Human Resources</li>
-        </ul><br>
+    <section class="education">
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Education</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <img class="icons" src="./assets/images/code_icon.svg" height="30" alt="">
+                    </div>
+                    <div>
+                    <h3 class="fs-2 text-body-emphasis">Udemy</h3>
+                    <h4 class="fs-5 text-body-emphasis">October 2023: Full stack web development</h4>
+                    <ul>
+                        <li>Hyper Text Markup Language 5</li>
+                        <li>Cascading Style Sheets 3</li>
+                        <li>JavaScript</li>
+                        <li>Node</li>
+                        <li>React</li>
+                        <li>PostgreSQL</li>
+                        <li>Web3</li>
+                        <li>Decentralised Apps</li>
+                    </ul>
+                    </div>
+                </div><!-- End #1 -->
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <img class="icons" src="./assets/images/icons_public-50.png" height="50" alt="">
+                    </div>
+                    <div>
+                    <h3 class="fs-2 text-body-emphasis">GetSmart</h3>
+                    <h4 class="fs-5 text-body-emphasis">Sept 2015: Public Management and Governance Certification</h4>
+                    <ul>
+                        <li>Introduction to Public Management</li>
+                        <li>Political-Administration Relationships</li>
+                        <li>Public Finance Management</li>
+                        <li>Policy Management</li>
+                        <li>Policy Monitoring and Evaluation</li>
+                        <li>Organisational Behavior</li>
+                        <li>Decentralised Service Management</li>
+                        <li>Ethics and Governance</li>
+                        <li>Human Resources</li>
+                    </ul>
+                    </div>
+                </div><!-- End #1 -->
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <img class="icons" src="./assets/images/book_icon.svg" height="30" alt="">
+                    </div>
+                    <div>
+                    <h3 class="fs-2 text-body-emphasis">Services Seta</h3>
+                    <h4 class="fs-5 text-body-emphasis">May 2008: Recognition of Prior Learning (NQF 4)</h4>
+                    <ul>
+                        <li>3 Day course with evidence based portfolio to validate prior learning experience.</li>
+                    </ul>
 
-        <p><h3>Services Seta</h3>
-            <strong>Course:</strong> Recognition of Prior Learning (NQF 4)<br>
-            <strong>Year:</strong> May - 2008</p>
-        <ul>
-            <li>3 Day course with evidence based portfolio to validate prior learning experience.</li>
-        </ul><br>
+                    </div>
+                </div><!-- End #2 -->
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <img class="icons" src="./assets/images/computer_laptop_icon.svg" height="30" alt="">
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Intec</h3>
+                        <h4 class="fs-5 text-body-emphasis">November 2011: Recognition of Prior Learning (NQF 4)</h4>
+                        <ul>
+                            <li>PC Technologies</li>
+                            <li>Essential Internet Concepts</li>
+                            <li>operating systems</li>
+                        </ul>
+                    </div>
+                </div><!-- End #3 -->
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <img class="icons" src="./assets/images/business-management_icon.svg" height="40" alt="">
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Louis Group international</h3>
+                        <h4 class="fs-5 text-body-emphasis">October 2003: Business Management Certification</h4>
+                        <ul>
+                            <li>Business Ethics</li>
+                            <li>Administration I & II</li>
+                            <li>Finance Principles</li>
+                            <li>Tax</li>
+                            <li>Budgeting</li>
+                            <li>Financial Policies</li>
+                            <li>Marketing and Sales</li>
+                            <li>Human Resources</li>
+                            <li>Documnetation and Legal Matters</li>
+                            <li>Technology</li>
+                            <li>Global Economics</li>
+                            <li>Politics I & II</li>
+                            <li>Media and Leadership</li>
+                        </ul>
+                    </div>
+                </div><!-- End #4 -->
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <img class="icons" src="./assets/images/computer_icon.svg" height="40" alt="">
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Discount Computers</h3>
+                        <h4 class="fs-5 text-body-emphasis">November 2000: A+ Certification</h4>
+                        <ul>
+                            <li>Networking PC Technologies</li>
+                            <li>LAN & WAN Technologies</li>
+                            <li>Windows Operating Systems</li>
+                            <li>Hardware assembly and mechanics</li>
+                            <li>Software upgrades and </li>
+                            <li>Biblical Sceince</li>
+                        </ul>
+                    </div>
+                </div><!-- End #5 -->
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <img class="icons" src="./assets/images/graduation_icon.svg" height="30" alt="">
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Glendale Senior Secondary</h3>
+                        <h4 class="fs-5 text-body-emphasis">1984 - 1988: Matric Certification</h4>
+                        <ul>
+                            <li>Afrikaans - HG</li>
+                            <li>English - HG</li>
+                            <li>History - SG</li>
+                            <li>Geography - SG</li>
+                            <li>Biology - SG</li>
+                            <li>Biblical Sceince - SG</li>
+                        </ul>
+                    </div>
+                </div><!-- End #5 -->
+            </div>
+        </div>
+    </section>
 
-            <strong>Course:</strong> PC Basics Certification<br>
-            <strong>Year:</strong> November - 2011</p>
-        <ul>
-            <li>PC Technologies</li>
-            <li>Essential Internet Concepts</li>
-            <li>operating systems</li>
-        </ul><br>
-        
-        <p><h3>Louis Group international</h3>
-            <strong>Course:</strong> Business Management Certification<br>
-            <strong>Year:</strong> October - 2003</p>
-        <ul>
-            <li>Business Ethics</li>
-            <li>Administration I & II</li>
-            <li>Finance Principles</li>
-            <li>Tax</li>
-            <li>Budgeting</li>
-            <li>Financial Policies</li>
-            <li>Marketing and Sales</li>
-            <li>Human Resources</li>
-            <li>Documnetation and Legal Matters</li>
-            <li>Technology</li>
-            <li>Global Economics</li>
-            <li>Politics I & II</li>
-            <li>Media and Leadership</li>
-        </ul>
-
-        <p><h3>Discount Computers</h3>
-            <strong>Course:</strong> A+ Certification<br>
-            <strong>Year:</strong> Nov/Dec - 2000</p>
-        <ul>
-            <li>Networking PC Technologies</li>
-            <li>LAN & WAN Technologies</li>
-            <li>Windows Operating Systems</li>
-            <li>Hardware assembly and mechanics</li>
-            <li>Software upgrades and </li>
-            <li>Biblical Sceince</li>
-        </ul>
-
-        <p><h3>Glendale Senior Secondary</h3>
-            <strong>Course:</strong> Matric Certification<br>
-            <strong>Year:</strong> 1984 - 1988</p>
-        <ul>
-            <li>Afrikaans</li>
-            <li>English</li>
-            <li>History</li>
-            <li>Geography</li>
-            <li>Biology</li>
-            <li>Biblical Sceince</li>
-        </ul>
-    <hr>
+    
 
     <!-- WORK EXPERIENCES-->
     <h2>Work experience</h2>
@@ -221,8 +302,7 @@
         <li>React</li>
         <li>Bootstrap</li>
     </ul>
-    <p>Accomplished professional skilled in achieving operational efficiency for high-performance office environments. Planning process improvement, data analysis and asset management expert. Employs stringent oversight of organizational systems and operational coordination, including procurement chains, logistics planning and information technology, IT desktop support and data management. </p>
-    <hr>
+
 
     <!-- OTHER / HIGHLIGHTS -->
     <h2>Other</h2>
@@ -246,16 +326,29 @@
         <li>2013 - Managed, recruited and trained a team of 20 staff in Port Elizabeth to capture 150,000 files onto a web based server for the South Africa Department of Home Affairs.</li>
         <li>2014 - Project manager for 15 staff capturing and transferring 250 000 files from SARS building for warehouse storage.</li>  
         <li>2013 - Setup full DHCP LAN network for 30 users in new office warehouse. </li>
-        
     </ul>
 
-    <br>
-    <!-- LINKS  -->
-    <a href="./public/hobbies.html">My Hobbies</a>
-    <a href="./public/contact.html">Contact Me</a>
-    <hr>
-    <footer>
-        <small>Copyright © 2023 - TrainMan007 All Rights Reserved</small>
-    </footer>
+       <!-- LINKS  -->
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="./public/hobbies.html" class="nav-link px-2 text-body-secondary">About me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Education</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Work Expereince</a></li>
+            <li class="nav-item"><a href="./public/contact.html" class="nav-link px-2 text-body-secondary">Contact Me</a></li>
+            <li class="nav-item px-1"><a href="#"><img src="./assets/images/github_logo.svg" height="24" alt="github icon"></a></li>
+            <li class="nav-item px-1"><a href="#"><img src="./assets/images/facebook logo_icon.svg" height="24" alt="github icon"></a></li>
+            <li class="nav-item px-1"><a href="#"><img src="./assets/images/instagram_icon.svg" height="24" alt="github icon"></a></li>
+
+        </ul>
+        <small><p class="text-center text-body-secondary">© 2023 TrainMan007 All Rights Reserved</p></small>
+        </footer>
+    </div>
+    <!-- End of FOOTER -->
+
 </body>
 </html>
