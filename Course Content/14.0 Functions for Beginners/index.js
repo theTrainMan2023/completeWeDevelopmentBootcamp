@@ -197,10 +197,52 @@ getMilk(10);*/
 // }
 
 // FIZ Z BUZZ
-function fizzBuzz(number) {
-  if (number % 3) {
-    return "Fizz"
-  } else {
-    
-  }
+// function fizzBuzz(number) {
+//   if (number % 3) {
+//     return "Fizz"    
+//   }
+//   if(number % 5){
+//     return "Buzz"
+//   }
+//   if (number % 3 && number % 5) {
+//     return "FizzBuzz"
+//   }
+// }   
+
+// console.log(fizzBuzz(15));
+
+// var newArray = [];
+// var count = 1;
+
+// function fizzBuzz() {
+
+//   while(count <= 100){
+
+//   if (count % 3 === 0 && count % 5 == 0) {
+//     newArray.push(" Fizz Buzz ")
+//   }
+//   else if (count % 3 === 0) {
+//     newArray.push(" fizz ")
+//   }else if(count % 5 === 0){
+//     newArray.push(" Buzz ")
+//   }else {
+//     newArray.push(count);
+//   }
+//   count++
+//   }
+//   console.log(newArray);
+// }
+
+// BOttles of BEER
+var numBottles = 99;
+while (numBottles >= 0) {
+    var bottleWord = "bottle";
+        if (numBottles === 1) {
+        bottleWord = "bottles"
+    }
+    console.log(numBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numBottles + " " + bottleWord + " of beer, ");
+    console.log("Take one down, pass it around,");
+    numBottles --;
+    console.log(numBottles + " " + bottleWord + " of beer on the wall.")
 }
