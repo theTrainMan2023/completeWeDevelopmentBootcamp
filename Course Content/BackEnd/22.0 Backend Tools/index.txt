@@ -1,0 +1,12 @@
+Front End 
+1. HTML
+2. CSS
+3. JS
+
+Back-end / Frameworks
+1. Java / Spring
+2. Ruby / Rails
+3. php / Larvel
+4. C# / ASP.Net
+5. Python / Flask & Django
+6. JS / Node & React
