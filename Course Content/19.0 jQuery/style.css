@@ -1,0 +1,32 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #696363;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-title {
+    color: #0a06ff;
+    font-size: 5rem;
+    font-style:italic;
+    }
+
+.big-title-2 {
+    color: rebeccapurple;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.margin-50{
+    margin: 50px;
+    background-color: yellowgreen;
+}
