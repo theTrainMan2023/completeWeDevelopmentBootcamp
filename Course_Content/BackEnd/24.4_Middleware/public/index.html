@@ -5,17 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Band Name Generator</title>
+  <style>
+    .container{
+      background-color: antiquewhite;
+      padding: 0 20px 50px ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 0 auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Band Name Generator</h1>
-  <form action="/submit" method="POST">
-    <label for="street">Street Name:</label>
-    <input type="text" name="street" required>
-    <label for="pet">Pet Name:</label>
-    <input type="text" name="pet" required>
-    <input type="submit" value="Submit">
-  </form>
+  <div class="container">
+
+    <h1>Band Name Generator</h1>
+    <form action="/submit" method="POST">
+      <label for="street">Street Name:</label>
+      <input type="text" name="street" required>
+      <label for="pet">Pet Name:</label>
+      <input type="text" name="pet" required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
 
 </html>

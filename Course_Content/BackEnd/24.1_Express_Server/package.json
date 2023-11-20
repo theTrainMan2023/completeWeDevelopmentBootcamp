@@ -1,0 +1,16 @@
+{
+  "name": "Express Server",
+  "version": "1.0.0",
+  "description": "Learning Express Server",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "theTrainMan2023",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
