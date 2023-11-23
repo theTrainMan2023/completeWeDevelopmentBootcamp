@@ -3,11 +3,8 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
+app.use(express.static("public"));//Static files
 
-//Step 3 - Make the styling show up.
-//Hint 1: CSS files are static files!
-//Hint 2: The header and footer are partials.
-//Hint 3: Add the CSS link in header.ejs
 
 //Step 4 - Add a dynamic year to the footer.
 //Hint: Google to find out how to get the current year using JS.
@@ -15,10 +12,15 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs");
 });
 
 app.post("/submit", (req, res) => {
+  //Pull a random adj noun from list below
+  const randomAdj = adj[Math.floor(Math.random()* adj.length)];
+  const randomNoun = noun[Math.floor(Math.random() * noun.length)];
+  //render this on the index page
+  res.render("index.ejs", { adjective: randomAdj, noun: randomNoun });
   //Step 2 - Make the generate name functionality work
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
   //Then:
@@ -31,6 +33,14 @@ app.post("/submit", (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+//Step 1 - Make the get route work and render the index.ejs file.
+
+
+//Step 3 - Make the styling show up.
+//Hint 1: CSS files are static files!
+//Hint 2: The header and footer are partials.
+//Hint 3: Add the CSS link in header.ejs
 
 const adj = [
   "abandoned",
